@@ -406,10 +406,7 @@ public class RegrasDeNegocio {
 						// do {
 						if (aprovados.size() > 0) {
 							System.out.println("\nTotal de clientes aprovados são: " + aprovados.size());
-							for (Cliente nomes : aprovados) {
-								System.out.println(nomes);
-							}
-							// cliente.setValidacao(true);
+							aprovados.stream().forEach(System.out::println);
 						} else {
 							System.out.println("\nSem clientes no momento!");
 
@@ -425,9 +422,7 @@ public class RegrasDeNegocio {
 							if (aprovados.size() > 0) {
 								System.out.println(
 										"\nSe deseja realmente excluir um cliente só selecionar a opção correspondente.");
-								for (Cliente nomes : aprovados) {
-									System.out.println(nomes);
-								}
+								aprovados.stream().forEach(System.out::println);
 								System.out.print("Qual deseja remover? : ");
 								int remover;
 								try {
