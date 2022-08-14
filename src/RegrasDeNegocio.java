@@ -20,7 +20,7 @@ public class RegrasDeNegocio {
 		String senhaUsuario = "";
 		String usuario = "admin";
 		String senha = "admin";
-		do { // Principal pro codigo retornar ao terminar
+		do { // Principal para o código retornar ao terminar
 
 			while (cliente.isValidacao() == false) {
 				System.out.println("---------------------------------------");
@@ -43,7 +43,7 @@ public class RegrasDeNegocio {
 					System.out.println("\nEscolha somente as opções disponíveis.");
 					cliente.setValidacao(false);
 				}
-			} // } while (cliente.isValidacao() == false);
+			} 
 			if (cliente.getEscolha() == 1) { // PRINCIPAL
 
 				do {
@@ -403,7 +403,7 @@ public class RegrasDeNegocio {
 						cliente.setEscolha(1);
 
 					} else if (cliente.getEscolha() == 2) { // Escolha 2 dentro do Login
-						// do {
+						
 						if (aprovados.size() > 0) {
 							System.out.println("\nTotal de clientes aprovados são: " + aprovados.size());
 							aprovados.stream().forEach(System.out::println);
@@ -414,8 +414,6 @@ public class RegrasDeNegocio {
 						cliente.setValidacao(true);
 						cliente.setEscolha(1);
 						continue;
-
-						// } while (cliente.isValidacao() == true);
 
 					} else if (cliente.getEscolha() == 3) { // opção 3 dentro do login
 						do {
@@ -459,7 +457,7 @@ public class RegrasDeNegocio {
 				System.out.println();
 				System.out.println("Consome 7,1 km/litro no etanol");
 				System.out.println("Consome 10,2 km/litro na gasolina");
-				System.out.println("\nConsonme na estrada: ");
+				System.out.println("\nConsome na estrada: ");
 				System.out.println();
 				System.out.println("Consume 9,3 km/litro no etanol");
 				System.out.println("Consome 13,4 km/litro na gasolina");
